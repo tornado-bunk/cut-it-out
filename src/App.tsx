@@ -18,7 +18,7 @@ import { ImageUploader } from './components/ImageUploader';
 import { CanvasViewer } from './components/CanvasViewer';
 import { useAppStore } from './store/useAppStore';
 import { useBackgroundRemoval } from './hooks/useBackgroundRemoval';
-import { Layers, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 function App() {
   const originalImage = useAppStore((state) => state.originalImage);
