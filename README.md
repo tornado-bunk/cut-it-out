@@ -54,6 +54,32 @@ npm run build
 
 The output will be in the `dist` folder, ready to be deployed to any static host (Vercel, Netlify, GitHub Pages, etc.).
 
+## 🐳 Docker
+
+You can also run CutItOut using Docker. This is useful for self-hosting or testing in a clean environment.
+
+### Using Docker Compose (Recommended)
+
+1.  **Build and start the container**
+    ```bash
+    docker-compose up -d --build
+    ```
+
+2.  **Access the application**
+    Open `http://localhost:8080` in your browser.
+
+### Using Docker CLI
+
+1.  **Build the image**
+    ```bash
+    docker build -t cut-it-out .
+    ```
+
+2.  **Run the container**
+    ```bash
+    docker run -p 8080:80 cut-it-out
+    ```
+
 ## 🤝 Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get started.

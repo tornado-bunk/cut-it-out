@@ -1,0 +1,7 @@
+services:
+  cut-it-out:
+    build: .
+    container_name: cut-it-out
+    ports:
+      - "8080:80"
+    restart: unless-stopped
